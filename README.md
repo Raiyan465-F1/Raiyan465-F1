@@ -24,13 +24,8 @@
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=Raiyan465-f1&theme=holi&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
 ---
-[![](https://visitcount.itsvg.in/api?id=Raiyan465-f1&icon=8&color=12)](https://visitcount.itsvg.in)
+[![](https://visitcount.itsvg.in/api?id=Raiyan465-f1&icon=8&color=12)](https://visitcount.itsvg.in) <img align="right" height="150" src="https://i.pinimg.com/originals/51/b4/ed/51b4ed526b875a35314f39e84770f9da.gif"  />
+
+
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
-<img align="right" height="150" src="https://i.pinimg.com/originals/51/b4/ed/51b4ed526b875a35314f39e84770f9da.gif"  />
-
-###
-
-<img src="https://raw.githubusercontent.com/Raiyan465-f1/Raiyan465-f1/output/snake.svg" alt="Snake animation" />
-
-###
