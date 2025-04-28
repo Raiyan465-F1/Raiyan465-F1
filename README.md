@@ -1,11 +1,11 @@
 <h1 align="center">Hi 👋, I'm Raiyan</h1>
 <h3 align="center">Love learning and creating new things and solve weird problem :v</h3>
 
-- 🔭 I’m currently working on **Front-End**
+- 🔭 I’m currently working on **Front-end of different projects**
 
-- 🌱 I’m currently learning **Front-end and ML**
+- 🌱 I’m currently trying to **improve my problem solving skills**
 
-- 💬 Ask me about **Any tech stuffs :v**
+- 💬 Ask me about **Life🗿**
 
 - 📫 How to reach me **justanotherone465@gmail.com**
 
