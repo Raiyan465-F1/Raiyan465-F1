@@ -1,16 +1,20 @@
-<h2 align="center">Hi 👋, I'm Raiyan — an Full-Stack Engineer from Dhaka</h2>
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=BD93F9&center=true&vCenter=true&repeat=true&width=900&lines=Hi+,+I'm+Raiyan+%E2%80%94+a+Full-Stack+Engineer+from+Dhaka" alt="Typing SVG" />
+</div>
 
 <p align="center">
-  <b>Building fast, scalable products with AI-native workflows and strong engineering fundamentals.</b><br>
-  I design and ship web and mobile applications that move quickly from idea to production, with a focus on clean architecture, maintainability, and performance.
+  <i>Fast execution. Clean architecture. Built for production.</i>
 </p>
 
 <p align="center">
-  🔭 <b>Currently exploring:</b> NLP, RAG systems, and intelligent product workflows<br>
-  🧠 <b>Background:</b> Machine learning, Python, Next.js, and scalable full-stack development
+  I build web and mobile products using AI-native workflows, with a focus on scalability, maintainability, and thoughtful engineering.
 </p>
 
-###
+<p align="center">
+  🔬 <b>Currently:</b> NLP • RAG • AI product workflows<br>
+  ⚙️ <b>Working with:</b> Python • Next.js • TypeScript • ML systems
+</p>
+
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=raiyan465-f1&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" height="150" alt="stats graph"  />
