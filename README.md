@@ -7,12 +7,7 @@
 
 <div align="center">
 
-<img src="assets/hero.svg" width="100%" alt="RAIYAN//OS boot screen. Raiyan Rahman: full-stack engineer and AI-native builder in Dhaka, Bangladesh. Fast execution. Clean architecture. Built for production.">
-
-<p>
-  I build web and mobile products using AI-native workflows,
-  with a focus on scalability, maintainability, and thoughtful engineering.
-</p>
+<img src="assets/hero.svg" width="100%" alt="RAIYAN//OS boot screen. Raiyan Rahman: full-stack engineer and AI-native builder in Dhaka, Bangladesh. Fast execution. Clean architecture. Built for production. I build web and mobile products using AI-native workflows, with a focus on scalability, maintainability, and thoughtful engineering.">
 
 <img src="assets/sheet.svg" width="100%" alt="Character sheet. Class: full-stack engineer. Origin: Dhaka, Bangladesh. Current quest: NLP, RAG and AI product workflows. Loadout: Python, TypeScript, JavaScript, Next.js, React, Node.js, Tailwind, PyTorch, Pandas, NumPy, FastAPI, Postgres, MySQL, Supabase, Docker, Git.">
 

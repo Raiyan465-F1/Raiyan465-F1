@@ -298,9 +298,10 @@ def core_frames(cols=34, rows=13, frames=16, cw=7.2, lh=12.0):
 
 
 def build_hero():
-    H = 536
-    body, css = [], []
     c = CFG
+    extra = (30 * len(c.get("intro", [])) + 10) if c.get("intro") else 0
+    H = 536 + extra
+    body, css = [], []
 
     # backdrop grid
     defs = ('<pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">'
@@ -423,11 +424,21 @@ def build_hero():
     t += 0.2
     svg, t, ex = typed("term", [("> ", YEL), (c["tagline"], SOFT)], nx, ny + 142, 1.5, t, cps=70)
     body.append(svg)
-    body.append('<g class="ty" style="animation-delay:%ss"><rect class="blink" x="%s" y="%d" width="12" height="20" fill="%s"/></g>' % (
-        fmt(t), fmt(ex + 6), ny + 139, YEL))
+    cur_y = ny + 139
+    # intro sentence, set in its own face
+    iy = ny + 186
+    for line in c.get("intro", []):
+        t += 0.15
+        svg, t, ex = typed("body", [(line, INK)], nx, iy, 1.6, t, cps=110)
+        body.append(svg)
+        cur_y = iy - 1
+        iy += 30
+    body.append('<g class="ty" style="animation-delay:%ss"><rect class="blink" x="%s" y="%s" width="12" height="20" fill="%s"/></g>' % (
+        fmt(t), fmt(ex + 6), fmt(cur_y), YEL))
+    shift = iy - (ny + 186) + (10 if c.get("intro") else 0)
 
     # ticker
-    ty = 440
+    ty = 440 + shift
     body.append('<rect y="%d" width="%d" height="34" fill="%s" opacity=".09"/>' % (ty, W, MAG))
     body.append('<rect y="%d" width="%d" height="1" fill="%s" opacity=".5"/><rect y="%d" width="%d" height="1" fill="%s" opacity=".5"/>' % (
         ty, W, MAG, ty + 34, W, MAG))
@@ -440,7 +451,7 @@ def build_hero():
         fmt(lw / 42.0), fmt(lw)))
 
     # footer strip: prompt + equaliser
-    fy = 492
+    fy = 492 + shift
     body.append(T("display", ">", 30, fy + 3, 1.5, YEL))
     body.append(T("display", "SCROLL TO CONTINUE", 52, fy + 3, 1.5, YEL, attrs='class="blink"'))
     bars = 28
@@ -457,11 +468,11 @@ def build_hero():
                "@keyframes eq{0%{transform:scaleY(.15)}35%{transform:scaleY(.9)}60%{transform:scaleY(.4)}100%{transform:scaleY(1)}}")
 
     # CRT switch-on
-    css.append(".crt{transform-origin:480px 268px;animation:crt .45s cubic-bezier(.2,.9,.3,1) both}"
+    css.append(".crt{transform-origin:480px " + str(H // 2) + "px;animation:crt .45s cubic-bezier(.2,.9,.3,1) both}"
                "@keyframes crt{0%{transform:scale(1,.004);filter:brightness(6)}55%{transform:scale(1,.004);filter:brightness(6)}"
                "100%{transform:scale(1,1);filter:brightness(1)}}")
     inner = '<g class="crt">%s</g><rect width="%d" height="%d" fill="url(#vig)"/>' % ("".join(body), W, H)
-    label = "%s. %s, %s. %s" % (c["name"].title(), c["role_a"], c["role_b"], c["tagline"])
+    label = "%s. %s, %s. %s %s" % (c["name"].title(), c["role_a"], c["role_b"], c["tagline"], " ".join(c.get("intro", [])))
     return svg_doc(W, H, inner, "".join(css), defs, label, cut=26)
 
 

@@ -9,14 +9,49 @@
   "role_a": "FULL-STACK ENGINEER",
   "role_b": "AI-NATIVE BUILDER",
   "tagline": "Fast execution. Clean architecture. Built for production.",
-  "boot": [
-    ["BOOT RAIYAN//OS 4.65", "OK", "green"],
-    ["MOUNT /dev/brain", "OK", "green"],
-    ["LOAD nlp.ko rag.ko fullstack.ko", "OK", "green"],
-    ["LINK DHAKA_BD 23.81N 90.41E", "ONLINE", "cyan"],
-    ["STATUS", "SAILING", "yellow"]
+  "intro": [
+    "I build web and mobile products using AI-native workflows,",
+    "with a focus on scalability, maintainability, and thoughtful engineering."
   ],
-  "ticker": ["NLP", "RAG", "AI PRODUCT WORKFLOWS", "PYTHON", "NEXT.JS", "TYPESCRIPT", "ML SYSTEMS", "FASTAPI", "POSTGRES", "DOCKER"],
+  "boot": [
+    [
+      "BOOT RAIYAN//OS 4.65",
+      "OK",
+      "green"
+    ],
+    [
+      "MOUNT /dev/brain",
+      "OK",
+      "green"
+    ],
+    [
+      "LOAD nlp.ko rag.ko fullstack.ko",
+      "OK",
+      "green"
+    ],
+    [
+      "LINK DHAKA_BD 23.81N 90.41E",
+      "ONLINE",
+      "cyan"
+    ],
+    [
+      "STATUS",
+      "SAILING",
+      "yellow"
+    ]
+  ],
+  "ticker": [
+    "NLP",
+    "RAG",
+    "AI PRODUCT WORKFLOWS",
+    "PYTHON",
+    "NEXT.JS",
+    "TYPESCRIPT",
+    "ML SYSTEMS",
+    "FASTAPI",
+    "POSTGRES",
+    "DOCKER"
+  ],
   "sheet": {
     "class": "FULL-STACK ENGINEER",
     "origin": "DHAKA, BANGLADESH",
@@ -24,52 +59,109 @@
     "status": "SAILING"
   },
   "loadout": {
-    "LANG": ["PYTHON", "TYPESCRIPT", "JAVASCRIPT", "HTML5", "CSS3"],
-    "WEB": ["NEXT.JS", "REACT", "NODE.JS", "TAILWIND"],
-    "DATA": ["PYTORCH", "PANDAS", "NUMPY", "FASTAPI"],
-    "INFRA": ["POSTGRES", "MYSQL", "SUPABASE", "DOCKER", "GIT"]
+    "LANG": [
+      "PYTHON",
+      "TYPESCRIPT",
+      "JAVASCRIPT",
+      "HTML5",
+      "CSS3"
+    ],
+    "WEB": [
+      "NEXT.JS",
+      "REACT",
+      "NODE.JS",
+      "TAILWIND"
+    ],
+    "DATA": [
+      "PYTORCH",
+      "PANDAS",
+      "NUMPY",
+      "FASTAPI"
+    ],
+    "INFRA": [
+      "POSTGRES",
+      "MYSQL",
+      "SUPABASE",
+      "DOCKER",
+      "GIT"
+    ]
   },
-  "trophies": ["PULL SHARK X3", "PAIR EXTRAORDINAIRE", "QUICKDRAW", "YOLO"],
+  "trophies": [
+    "PULL SHARK X3",
+    "PAIR EXTRAORDINAIRE",
+    "QUICKDRAW",
+    "YOLO"
+  ],
   "quests": [
     {
       "repo": "kom-bish",
       "title": "KOM-BISH",
       "desc": "Bangla rice adviser that tells farmers whether to spray at all.",
-      "tags": ["PYTHON", "GRADIO", "ML"]
+      "tags": [
+        "PYTHON",
+        "GRADIO",
+        "ML"
+      ]
     },
     {
       "repo": "gridwise",
       "title": "GRIDWISE",
       "desc": "An LLM reads operator notes, an LP solver plans the campus energy grid.",
-      "tags": ["PYTHON", "LLM", "OPTIMIZER"]
+      "tags": [
+        "PYTHON",
+        "LLM",
+        "OPTIMIZER"
+      ]
     },
     {
       "repo": "Maaya",
       "title": "MAAYA",
       "desc": "Women's health platform: tracking, community and doctor guidance.",
-      "tags": ["NEXT.JS", "TYPESCRIPT", "POSTGRES"]
+      "tags": [
+        "NEXT.JS",
+        "TYPESCRIPT",
+        "POSTGRES"
+      ]
     },
     {
       "repo": "Deadlock-Custom-Match-History",
       "title": "DEADLOCK CUSTOM MATCHES",
       "desc": "Mod that adds private-lobby games to Deadlock's match history.",
-      "tags": ["GAME MOD"]
+      "tags": [
+        "GAME MOD"
+      ]
     },
     {
       "repo": "Bracu-RoutineParser",
       "title": "BRACU ROUTINE PARSER",
       "desc": "OCR pipeline that turns class-routine screenshots into clean data.",
-      "tags": ["PYTHON", "EASYOCR"]
+      "tags": [
+        "PYTHON",
+        "EASYOCR"
+      ]
     },
     {
       "repo": "tabRecord",
       "title": "TABRECORD",
       "desc": "Chrome extension that records a Meet tab while you keep browsing.",
-      "tags": ["TYPESCRIPT", "MV3"]
+      "tags": [
+        "TYPESCRIPT",
+        "MV3"
+      ]
     }
   ],
   "links": [
-    {"id": "linkedin", "label": "LINKEDIN", "url": "https://www.linkedin.com/in/raiyan-rahman-46b778263", "color": "cyan"},
-    {"id": "repos", "label": "ALL REPOS", "url": "https://github.com/Raiyan465-F1?tab=repositories", "color": "magenta"}
+    {
+      "id": "linkedin",
+      "label": "LINKEDIN",
+      "url": "https://www.linkedin.com/in/raiyan-rahman-46b778263",
+      "color": "cyan"
+    },
+    {
+      "id": "repos",
+      "label": "ALL REPOS",
+      "url": "https://github.com/Raiyan465-F1?tab=repositories",
+      "color": "magenta"
+    }
   ]
 }
