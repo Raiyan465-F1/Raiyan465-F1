@@ -1,0 +1,50 @@
+name: Refresh profile panels
+
+# Redraws the SVG panels in assets/ from live GitHub data.
+# Commit City is the only panel that needs this; the rest change when profile.json does.
+
+on:
+  schedule:
+    - cron: "17 21 * * *" # 03:17 in Dhaka
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - profile.json
+      - scripts/**
+      - .github/workflows/refresh-profile.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-profile
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Fetch contribution calendar and counters
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/fetch.py
+
+      - name: Draw panels
+        run: python3 scripts/build.py
+
+      - name: Commit if anything changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets data
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+            exit 0
+          fi
+          git commit -m "Refresh profile panels"
+          git pull --rebase
+          git push
